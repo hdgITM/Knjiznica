@@ -81,12 +81,13 @@ img {
 }
 
 .container-1 {
+    /* container za karte */
     margin: 0 auto;
     width: 92%;
     position: relative;
 }
 .container-2 {
-    /* Provjereno od strane najboljih čitatelja u svemiru i šire! */
+    /* Provjereno od strane najboljih čitatelja u svemiru i šire! i Kontaktirajte nas putem Emaila */
     margin: 0 auto;
     max-width: 560px;
 }
@@ -468,4 +469,217 @@ img {
     .footer-email-link {
         font-size: 30px;
     }
+}
+
+.contact-bg-image {
+    background-image: url(slike/bg-1.jpg);
+    background-position: 50% 0;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.contact-wrap {
+    margin-top: 25px;
+}
+.contact-form {
+    /* izgled forme u kontaktirajte nas putem emaila */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.input-wrap-half {
+    /* izgled kucice u formi */
+    width: 40%;
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-wrap-full {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.3846;
+    display: block;
+    color: #000;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.form-label {
+    /* isto tako izgled kucice u formi */
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.3846;
+    display: block;
+    color: #000;
+}
+.form-input {
+    /* isto tako izgled kucice u formi */
+    color: #231f20;
+    background-color: #0000;
+    border: 1px solid #a7a8aa;
+    border-radius: 0;
+    outline: 0;
+    width: 100%;
+    height: 15px;
+    margin: 0;
+    padding: 15px 16px;
+    font-size: 16px;
+    display: block;
+    position: relative;
+}
+
+.form-textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    resize: none;
+    color: #231f20;
+    caret-color: #231f20;
+    background-color: #0000;
+    border: 1px solid #a7a8aa;
+    border-radius: 0;
+    outline: 0;
+    width: 100%;
+    min-height: 100px;
+    margin: 0;
+    padding: 15px 16px;
+    font-size: 16px;
+    transition: border-color .3s;
+    display: block;
+    position: relative;
+    overflow: auto;
+}
+.contact-button {
+    background-color: #964639;
+    color: #fff;
+    border: none;
+    border-radius: 8%;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faq-section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.faq-title {
+    text-align: center;
+    /* naslov galerija iznad slika */
+}
+
+.faq-item {
+    /* ispod često postavljana pitanja */
+    border: 1px solid #a7a8aa;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.faq-checkbox {
+    display: none;
+}
+
+.faq-question {
+    display: block;
+    background-color: #964639;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-question:hover {
+    background-color: #794f49;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #f4f4f4;
+    color: #231f20;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-checkbox:checked + .faq-question + .faq-answer {
+    display: block;
+}
+
+.gallery-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.gallery-big {
+    position: relative;
+    text-align: center;
+}
+
+.gallery-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    list-style: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+.list-item.active {
+    border-color: #964639;
+}
+
+.list-image {
+    /* u galeriji male slike i njihov oblik */
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
 }
